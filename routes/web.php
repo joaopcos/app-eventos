@@ -1,9 +1,13 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    $arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\ContactController;
 
-    return view('home', ['arr' => $arr]);
-});
+Route::get('/', [EventController::class, 'index']);
+Route::get('/events/create', [EventController::class, 'create']);
+Route::post('/events', [EventController::class, 'store']);
+
+Route::get('contact', [ContactController::class, 'index']);
