@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="mb-5 border-bottom">
+    <header class="border-bottom">
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -48,7 +48,7 @@
 
     </main>
 
-    <footer class="py-3 mt-5 text-body-secondary border-top d-flex justify-content-center">
+    <footer class="py-3 text-body-secondary border-top d-flex justify-content-center">
         Events - © 2023
     </footer>
 </body>
